@@ -1,5 +1,7 @@
 import axios from "axios";
 import React from "react";
+import "./App.css";
+import Movie from "./Movie";
 
 class App extends React.Component {
   state = {
@@ -8,9 +10,16 @@ class App extends React.Component {
   };
 
   getMovies = async () => {
-    // 액세스 실행
-    const movies = await axios.get("https://yts-proxy.now.sh/list_movies.json");
-    console.log(movies);
+    const {
+      // 데이터가 있는데 그 안에는 movies라는 데이터가 있음
+      data: {
+        data: { movies },
+      },
+    } = await axios.get(
+      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
+    ); // json 다음에 ?로 api 가져오는 방법
+    //console.log(movies);//movies.data.data.movies 정연산자 적용 => 구조 분해 할당하여 객체 구조화 ES6
+    this.setState({ movies, isLoading: false });
   };
 
   componentDidMount() {
@@ -22,9 +31,33 @@ class App extends React.Component {
   }
 
   render() {
-    const { isLoading } = this.state; //구조 분해 할당 : this.state를 입력하지 않아도 된다.
-    return <div>{isLoading ? "Loading.." : "영화 데이터를 출력"}</div>;
+    // 보여지는 부분
+    const { isLoading, movies } = this.state; //구조 분해 할당 : this.state를 입력하지 않아도 된다.
+    // 하나씩 받아오는 map
+    return (
+      <section class="container">
+        {isLoading ? (
+          <div class="loader">
+            <span class="loader__text">Loading...</span>
+          </div>
+        ) : (
+          <div class="movies">
+            {movies.map((movie) => {
+              return (
+                <Movie
+                  key={movie.id}
+                  id={movie.id}
+                  year={movie.year}
+                  title={movie.title}
+                  summary={movie.summary}
+                  poster={movie.medium_cover_image}
+                />
+              );
+            })}
+          </div>
+        )}
+      </section>
+    );
   }
 }
-
 export default App;
