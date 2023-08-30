@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KCC-Ganpan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.detail_text {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 300;
+}
+.detail_title {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  font-size: 30px;
+}
+.detail_year {
+  font-family: "KCC-Ganpan";
+  font-size: 15px;
+}
+
+.detail_summary {
+  font-family: "omyu_pretty";
+  font-size: 15px;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Detail.css";
 
 class Detail extends React.Component {
   componentDidMount() {
@@ -19,9 +20,11 @@ class Detail extends React.Component {
             alt={location.state.title}
             title={location.state.title}
           />
-          <h3 className="detail_title">{location.state.title}</h3>
-          <h4 className="detail_year">{location.state.year}</h4>
-          <h4 className="detail_summary">{location.state.summary}</h4>
+          <div className="detail_text">
+            <h3 className="detail_title">{location.state.title}</h3>
+            <h4 className="detail_year">{location.state.year}</h4>
+            <h4 className="detail_summary">{location.state.summary}</h4>
+          </div>
         </div>
       );
     } else {
