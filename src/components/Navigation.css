@@ -1,9 +1,9 @@
 .nav {
   z-index: 1;
-  position: fixe;
+  position: fixed;
   top: 50px;
   left: 10px;
-  display: flex;
+  display: fixed;
   flex-direction: column;
   background-color: white;
   padding: 10px 20px;
@@ -30,8 +30,6 @@
   font-weight: 600;
 }
 
-.nava:not(:last-child) {
-  padding: 20px;
-  margin-top: 20px;
+.nav a:not(:last-child) {
   margin-bottom: 20px;
 }

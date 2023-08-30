@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "SDSamliphopangche_Outline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HakgyoansimWoojuR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -11,6 +27,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 300;
+  font-family: "SDSamliphopangche_Outline";
 }
 
 .movies {
@@ -20,6 +37,7 @@
   padding: 50px;
   width: 80%;
   padding-top: 70px;
+  font-family: "HakgyoansimWoojuR";
 }
 
 @media screen and (max-width: 1090px) {
