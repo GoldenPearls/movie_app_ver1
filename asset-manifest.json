@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GoldenPearls/movie_app_ver1/static/css/main.bf13f821.css",
-    "main.js": "/GoldenPearls/movie_app_ver1/static/js/main.929cb19f.js",
-    "index.html": "/GoldenPearls/movie_app_ver1/index.html",
-    "main.bf13f821.css.map": "/GoldenPearls/movie_app_ver1/static/css/main.bf13f821.css.map",
-    "main.929cb19f.js.map": "/GoldenPearls/movie_app_ver1/static/js/main.929cb19f.js.map"
+    "main.css": "/movie_app_ver1/static/css/main.b4b24141.css",
+    "main.js": "/movie_app_ver1/static/js/main.929cb19f.js",
+    "index.html": "/movie_app_ver1/index.html",
+    "main.b4b24141.css.map": "/movie_app_ver1/static/css/main.b4b24141.css.map",
+    "main.929cb19f.js.map": "/movie_app_ver1/static/js/main.929cb19f.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf13f821.css",
+    "static/css/main.b4b24141.css",
     "static/js/main.929cb19f.js"
   ]
 }
