@@ -10,6 +10,15 @@ function Movie({ title, year, summary, poster, genres }) {
       <div className="movie">
         <h3 className="movie_title">{title}</h3>
         <h5 className="movie_year">{year}</h5>
+        <ul className="movie_genres">
+          {genres.map((genre, index) => {
+            return (
+              <li kwy={index} className="movie_genre">
+                {genre}
+              </li>
+            );
+          })}
+        </ul>
         <p className="movie_summary">{summary}</p>
       </div>
     </div>
